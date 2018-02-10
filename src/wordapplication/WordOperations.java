@@ -1,15 +1,20 @@
 package wordapplication;
 
+import wordapplication.gui.WordController;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class WordOperations {
 
     private long beginTime;
-    private int loopAmount;
+    private int amountOfWords;
 
-    public WordOperations(int loopAmount) {
-        this.loopAmount = loopAmount;
+    public WordOperations(int amountOfWords) {
+        this.amountOfWords = amountOfWords;
+
+        WordController.DEFAULT_TEXT = WordController.DEFAULT_TEXT.replace("/n", "");
+        WordController.DEFAULT_TEXT = WordController.DEFAULT_TEXT.replace(",", "");
     }
 
     public void calculateAmountOfWords() {
@@ -41,8 +46,6 @@ public class WordOperations {
     public void endTimer() {
         long endTime = System.currentTimeMillis();
         long timeDifference = endTime - beginTime;
-
-        if (timeDifference == 0L) return;
 
         System.out.println("Computation took " + timeDifference + "ms");
     }

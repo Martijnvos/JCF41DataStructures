@@ -16,7 +16,7 @@ import wordapplication.WordOperations;
  */
 public class WordController implements Initializable {
     
-   public static final String DEFAULT_TEXT =   "Een, twee, drie, vier\n" +
+   public static String DEFAULT_TEXT =   "Een, twee, drie, vier\n" +
                                                 "Hoedje van, hoedje van\n" +
                                                 "Een, twee, drie, vier\n" +
                                                 "Hoedje van papier\n";
