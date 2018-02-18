@@ -19,7 +19,8 @@ What is the execution time per test?
 # SonarQube
 I used SonarQube to squash the pesky bugs left-over after checking the code myself.  
 It gave me some interesting insights in the order of the 'static' and 'final' keywords and reminded me of using a Logger instead of System prints.  
-The results can be seen in the image below:
+The results can be seen in the image below:  
+
 ![SonarQube results](img/SonarQubeResults.PNG)
 
 # Running this application
