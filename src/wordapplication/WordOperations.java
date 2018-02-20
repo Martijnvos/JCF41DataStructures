@@ -23,7 +23,7 @@ public class WordOperations {
 
     public WordOperations() {
 
-        // Instantation of objects: O(1)
+        // Instantiation of objects: O(1)
         individualWords = new HashSet<>();
         sortedWords = new TreeSet<>(Comparator.reverseOrder());
         frequencyOfWordsMap = new TreeMap<>();
@@ -53,7 +53,7 @@ public class WordOperations {
      *  Checks the amount of different/individual words are in the given text.
      *  For this, a HashSet is used because it cannot hold duplicate values.
      *  A TreeSet wouldn't give an advantage as sorting doesn't matter here.
-     *  The total time complexity of this method is O(log(n))
+     *  The total time complexity of this method is O(n)
      */
     public String calculateAmountOfDifferentWords(int amountOfWords) {
         prepareWords(amountOfWords);
@@ -62,7 +62,7 @@ public class WordOperations {
         timer = new Timer(AMOUNT_DIFFERENT, amountOfWords);
 
         // Arrays.asList: O(1) because of unmodifiable list
-        // addAll of HashSet: O(log(n))
+        // addAll of HashSet: O(n)
         individualWords.addAll(Arrays.asList(words));
 
         // .size: O(1)
