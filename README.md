@@ -1,5 +1,6 @@
-# Word application Martijn
-This application is the execution of Assignment 1.  
+# Word application
+This application is the execution of Assignment 1 of the JCF41 course on Fontys.
+It's meant for getting an understanding of the Java Collection Framework.  
 There are several use cases of this application:
 - Count the total amount of words of text
 - Count the amount of different words in text
